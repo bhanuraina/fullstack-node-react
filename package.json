@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node server.js --ignore public/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,28 @@
   "bugs": {
     "url": "https://github.com/bhanuraina/fullstack-node-react/issues"
   },
-  "homepage": "https://github.com/bhanuraina/fullstack-node-react#readme"
+  "homepage": "https://github.com/bhanuraina/fullstack-node-react#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.15.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "react-test-renderer": "^17.0.1"
+  }
 }
